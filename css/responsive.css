@@ -1,0 +1,236 @@
+@media(min-width: 1200px) {}
+
+@media(max-width: 1199px) {
+    .res_table{
+        overflow-x: scroll!important;
+    }
+    .table_box{
+        width: 1100px!important;
+        max-width: none;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .nav-links {
+        width: 80%;
+    }
+    
+     /*team part css start*/
+    .team_text {
+        margin-top: 40px;
+        height: 420px;
+    }
+    /*  contact part css start  */
+    .contact_form {
+        width: 40%;
+    }
+    /*contact part css end*/
+    
+    /*   footer part css start*/
+    .footer_header {
+        padding-bottom: 25px;
+        padding-top: 30px;
+    }
+    /*    footer part css end*/
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    
+    /* menu part css start*/
+    .customnav {
+        background: #101015;
+    }
+    
+    /*banner part css start*/
+    .banner_text_div {
+        max-width: 500px;
+    }
+    /*about part css start*/
+  
+    /*team part css start*/
+    .team_text {
+        margin-left: 0px;
+        height: 420px;
+    }
+    .team_text:after {
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        left: 50%;
+        top: -50px;
+        transform: translateX(-50%);
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid #0088cc;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    /*team part css end*/
+    
+    /*  contact part css start  */
+    .contact_form {
+        width: 50%;
+    }
+    /*contact part css end*/
+    
+    /*   footer part css start*/
+    .footer_header {
+        padding-bottom: 30px;
+        padding-top: 40px;
+    }
+    /*    footer part css end*/
+}
+
+@media(max-width:575px) {
+    /* menu part css start*/
+    nav {
+        min-height: 8vh;
+        justify-content: center;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0%;
+        height: 92vh;
+        top: 8vh;
+        background-color:#101015;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        transform: translateX(100%);
+        transition: transform.5s ease-in;
+        z-index:999;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .customnav {
+        background: #101015;
+    }
+
+    #banner_part {
+        position: relative;
+        background-size: cover;
+        background-position: -12px;
+        padding: 136px 0px;
+        z-index: 1;
+    }
+    /*banner part css start */
+    .banner_text h3 {
+        font-size: 28px;
+        line-height: 60px;
+    }
+    .banner_text h2 {
+        font-size: 42px;
+        line-height: 40px;
+    }
+    .banner_text p {
+        padding: 40px 35px;
+    }
+    .banner_text_main{
+        display:none;
+    }
+    .banner_text_mobile{
+        display: block;
+    }
+    
+    .banner_text_mobile P {
+        color: rgb(236, 231, 231);
+        font-family: 'raleway', sans-serif;
+        font-size: 15px;
+        line-height: 28px;
+        z-index: 900;
+        font-weight: 400;
+        text-align: justify;
+        padding:25px 0px;
+    }
+    .banner_text_mobile P span{
+        font-weight: 700;
+    }
+    /*banner part css end */
+    
+    /*team part css start*/
+    .team_text {
+        padding: 20px 10px;
+        margin-left: 0px;
+        height: 520px;
+    }
+    .team_text:after {
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        left: 50%;
+        top: -50px;
+        transform: translateX(-50%);
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid #0088cc;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+    /*team part css end*/
+    
+    /*skill part css start*/
+    #counter_part {
+        padding: 0;
+        padding-top: 50px;
+    }
+    .skill {
+        margin: 20px 0px;
+        padding: 30px 10px;
+    }
+    .table-dark thead th {
+        font-size: 16px;
+    }
+    .table-dark tbody tr {
+        font-size: 15px;
+    }
+    /*skill part css end*/
+    
+    /*testimonial part css start*/
+    .header_all h2 {
+        font-size: 22px;
+    }
+    .testimonial_icon h5 {
+        font-size: 25px;
+    }
+    .testimonial_item p {
+        text-align: justify;
+    }
+    /*testimonial part css end*/
+    /* portfolio part css */
+    .portfolio_img p {
+        font-size: 15px;
+        padding: 5px 0px;
+    }
+    /*  contact part css start  */
+    .contact_form {
+        width: 80%;
+    }
+    .contact_main{
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    .contact_address .contact_text p {
+        font-size: 15px;
+    }
+    .footer p {
+        font-size: 13px;
+    }
+    /*contact part css end*/
+    
+    /*   footer part css start*/
+    .footer_header {
+        padding-bottom: 25px;
+        padding-top: 40px;
+    }
+    /*    footer part css end*/
+}

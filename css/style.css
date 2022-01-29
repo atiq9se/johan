@@ -1,0 +1,318 @@
+/* Template name:
+   Author name:atiqur
+   version:1.0.0.0
+
+    Table of content
+    ================
+    1.Menu part
+    2.Banner part
+    3.Experience part
+    4.Academic part
+    5.Skill part
+    6.Protfolio part
+    7.Contact part
+    8.Footer part
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin:0px;
+}
+
+a:hover,
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+}
+
+body{
+    background: #101015;
+}
+
+.top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* menu part start */
+.customnav {
+    background: #101015;
+    z-index: 999;
+    width: 100%;
+}
+.fixtop{
+    position: fixed;
+    top:0px;
+    box-shadow: 0px 0px 5px 0px rgba(252, 252, 252, 0.3);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(252, 252, 252, 0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(252, 252, 252, 0.3);
+    z-index: 999;
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #101015;
+}
+
+.logo h1{
+    font-family: Alfa Slab One;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:#eaeaea;
+    font-size: 32px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    position: relative;
+	font-size: 15px;
+	font-weight: 600;
+	color: #eaeaea;
+	padding: 12px 15px;
+	text-transform: uppercase;
+}
+#mynav ul li a {
+	position: relative;
+	font-size: 15px;
+	font-weight: 600;
+	color: #f1f1f1;
+	padding: 12px 15px;
+	text-transform: uppercase;
+}
+
+.burger div {
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*menu part end*/
+
+/*banner part start*/
+
+#banner_part {
+    background-image: url(../images/20.png);
+    position: relative;
+    background-size: cover;
+    padding: 285px 0px;
+    z-index: 1;
+}
+
+#banner_part:after {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, .7);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.banner_text_main{
+    position: relative;
+}
+.banner_text{
+    position: absolute;
+    content:'';
+    width: 50%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.banner_text P {
+    color: rgb(236, 231, 231);
+    font-family: 'raleway', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    z-index: 900;
+    font-weight: 400;
+    text-align: justify;
+}
+.banner_text P span{
+    font-weight: 700;
+}
+.banner_text_mobile{
+    display: none;
+}
+/* banner part end */
+
+/*about part css start*/
+.header_all h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #939393;
+    font-weight: 700;
+}
+.table-dark thead th {
+	font-size: 17px;
+    color:#979595;
+}
+.table-dark tbody tr {
+	font-size: 16px;
+    color:#979595;
+    font-weight: normal;
+}
+/*portfolio part css start*/
+.portfolio_img {
+    position: relative;
+    margin: 15px 0px;
+    border: 5px solid #151515;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    0px 0px 20px 0px rgba(50, 50, 50, 1);
+    box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 1);
+    text-align: center;
+}
+.portfolio_img p{
+    color:#a2a2a2;
+    font-size: 18px;
+    padding:10px 0px;
+}
+
+.portfolio_img img{
+    border-radius: 5px;
+}
+
+/*portfolio part css end*/
+
+
+/* contact part css start */
+.contact_main{
+    display:-webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+}
+.contact_address {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+    padding-bottom: 25px;
+}
+.contact_address .contact_text p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #888;
+}
+.contact {
+    margin: 12px 15px 5px 0px;
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    border-radius: 50%;
+}
+.contact i {
+    line-height: 30px;
+    text-align: center;
+}
+.contact_icon{
+    display: flex;
+    justify-content: center;
+}
+.contact_icon_inner i{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.contact_icon_inner:hover {
+    transform: scale(1.5);
+    transition: all linear .2s;
+}
+.contact_icon_inner i {
+    line-height: 30px;
+    display: inline-block;
+    color: #353535;
+}
+/* contact part css end */
+
+/*footer part css start*/
+#footer_part{
+    padding: 30px 0px;
+}
+.footer p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #888;
+    text-align: center;
+}
+/*footer part css end*/
