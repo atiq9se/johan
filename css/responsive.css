@@ -87,6 +87,9 @@
         min-height: 8vh;
         justify-content: center;
     }
+    .logo h1 {
+        font-size: 18px;
+    }
     .nav-links {
         position: absolute;
         right: 0%;
